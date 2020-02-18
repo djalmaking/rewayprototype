@@ -419,7 +419,7 @@ color: white;
   --------------------------------------------- */
 
   .top-banner{
-      background-image: url(/assets/images/Top\ Banner.png);
+      background-image: url(/dist/assets/images/Top_Banner.png);
       height: 90px;
       color: white;
       font-family: 'Suez One', serif;
