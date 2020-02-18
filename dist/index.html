@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Suez+One&display=swap" rel="stylesheet">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/css/mdb.min.css" rel="stylesheet">
+    <!-- bootstrap-slider -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css">
+ 
+
+    <!-- Select 2 -->
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet" />
+    
+  
+
+    
+    <title>Dotslah assignment solution - Djalma</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-xl navbar-light bg-white min-vw-100">
+      <a class="navbar-brand ml-lg-5" href="#"> <img src="assets/images/Logo.svg" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-5 mr-auto">
+          <li class="nav-item pl-lg-5">
+            <a class="nav-link" href="#">Apparel</a>
+          </li>
+          <li class="nav-item pl-lg-4">
+            <a class="nav-link active" href="#">Shoes <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item pl-lg-4">
+            <a class="nav-link" href="#">Equipment</a>
+          </li>
+          <li class="nav-item pl-lg-4">
+            <a class="nav-link" href="#">Gift</a>
+          </li>
+        </ul>
+        <div class="d-inline iconDiv">
+          <ul class="d-inline-flex select-icon pt-3">
+            <li>
+              <a href="#"><i class="fas fa-gift fa-lg mr-lg-5 mr-sm-1"></i></a>           
+          </li>
+          <li>
+            <a href="#"><i class="far fa-star fa-lg mr-lg-5 mr-sm-1"></i></a>
+          </li>
+          <li>
+            
+            <a href="#"><i class="far fa-heart fa-lg mr-lg-5 mr-sm-1"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-tag fa-lg mr-lg-5 mr-sm-1" ></i></a>
+            
+          </li>
+          </ul>
+        </div>
+          
+        <div class="mr-5 my-2 my-0 justify-content-start" id="hdbtn">
+          <a class="pr-4" href="#">SIGN UP</a>
+          <button class="btn-outline my-2 my-sm-0" type="submit">LOG IN</button>
+        </div>
+    
+  
+      </div>
+    </nav>
+
+    <section class="fndStore">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 ml-lg-5">
+          <div class="ml-lg-5 pt-2 pb-2">
+          <p class="ml-lg-5"><h1>Adventure is just around the corner</h1></p>
+         </div>
+          </div>
+
+          <div class="col-5 ml-lg-5 pt-2 fndstrLinks d-flex justify-content-end">
+            <div class="ml-lg-5 pt-2">
+              <button class="btn-fndStore my-2 my-sm-0" type="submit">FIND STORE</button>
+                <a class="my-2 my-sm-0 ml-lg-4" href="#">NOT IN SOUTH AFRICA</a>
+           </div>        
+            </div>
+      </div>      
+    </div>
+  </section>
+
+  <div class="row">
+
+    <!------------------------------------------------
+       START LEFT ALIGNED CONTENT
+      ----------------------------------------------->
+
+    <div class="col-sm-12 col-md-12 col-lg-3 pt-lg-4">
+      <div class="wrapper mr-lg-5">
+      <div class="sideForm pt-3">
+       <!-- Search form -->
+
+        <input type="checkbox" id="toggle" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    
+        <label id="shown" for="toggle" class="ml-4">
+           <span>Filters</span>  <img src="assets/images/filter.svg" style="width: 18px;" alt="">
+        </label>
+        <label id="hidden" for="toggle" class="ml-4">
+          <i class="fas fa-angle-left fa-lg mr-3"></i>  Hide Filters
+        </label>
+
+      <!-- </button>  -->
+
+      <div class="row">
+        <div class="col-12">
+      <form class="form-inline md-form form-sm mt-2 pl-4 pb-4 active-cyan-2">
+      <input class="form-control form-control-sm mr-3 w-75 search-in" type="text" placeholder="SEARCH REWAY"
+        aria-label="Search"><a href="#" class="btnSearch"><i class="fas fa-search fa-lg" aria-hidden="true"></i></a>
+     
+    </form>
+  </div>
+  </div>
+      </div>
+
+      <form class="collapse" id="collapseExample">
+        <div class="form-group col-md-10 ml-2 pt-3">
+          <div class="label">
+          <label for="exampleFormControlSelect1">BRANDS</label>
+        </div>
+          <select class="js-example-basic-multiple" name="states[]" multiple="multiple" style="max-width: 512px; margin: auto;">
+            <option selected>SUPPERBALIST</option>
+            <option selected>Mango</option>
+            <option>Supreme</option>
+            <option>Timberland</option>
+            <option>Due South</option>
+          </select>
+        
+        </div>
+
+
+      <div class="form-row">
+        <div class="form-group col-md-10 ml-4 pt-1">
+          <label for="exampleFormControlSelect1">COLOUR</label>
+          <select class="form-control" id="exampleFormControlSelect1" type="text">
+            <option>SELECT COLOUR</option>
+            <option>Black</option>
+            <option>White</option>
+            <option>Blue</option>
+            <option>Green</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="rangeSlider ml-4 pt-4">
+      <label for="customRange1 ml-5">PRICING</label>
+
+  
+      <div class="rangeSlider mb-5 mt-5 mr-5">
+        <div class="slider-wrapper slider-info slider-strips slider-ghost">
+          <input class="input-range" id="ex1" data-slider-id='ex1Slider' data-slider-tooltip="show" type="text" data-slider-step="1" data-slider-value="300, 2000" data-slider-min="0" data-slider-max="3000" data-slider-range="true" data-slider-tooltip_split="true" />
+          
+        </div>
+      </div>
+    </div>
+      
+      <div class="row d-flex justify-content-center">
+      <button type="submit" class="submSearch mb-5"><i class="fas fa-search fa-lg pr-2"></i>Search</button>
+    </div>
+    </form>
+  </div>
+    <div class="col-sm-3 order-last order-md-2 col-lg ml-5 pt-5 d-none d-lg-block d-xl-none d-none d-xl-block">
+
+      <img src="assets/images/Advert Banner.png" class="img-fluid">
+
+    </div>
+
+
+<!-- Small sign up form -->
+
+   
+    
+
+      
+    <div class="row">
+        <div class="col-12 d-flex justify-content-center">
+          <div class="sm-sign-up py-2 mt-5">
+            <div class="hd-sign">
+              <div class="row d-flex justify-content-end mr-3">
+                <button><i class="fas fa-times"></i></button>
+              </div>
+            <div class="py-2">
+              <i class="far fa-envelope fa-3x"></i>
+            </div>
+              <div class="mt-1 mx-2">
+         <h1> SIGN UP TO OUR MAILING LIST!</h1>
+        </div>
+      </div>
+        
+        <form class="sign-mail">
+      <div class="form-group mx-4">
+        <label for="sign-up-lb" class="pt-3">EMAIL</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="ENTER EMAIL ADDRESS">
+      </div>
+        <div class="row d-flex justify-content-center py-2">
+        <button class="btn-sign" type="submit">SUBMIT</button>
+      </div>
+    </form>
+  </div>
+        </div>
+    
+        </div>
+
+    
+    <!-- End small sign up form -->
+
+    </div>
+  
+    <!-- END LEFT ALIGNED CONTENT -->
+
+
+    <!------------------------------------------------
+       START MAIN CONTENT
+      ----------------------------------------------->
+    <div class="col-sm-12 col-lg-9 pt-5">
+  
+    <div class="d-flex top-banner border border-style-dark mr-lg-5">
+      <div class="col-sm-3 ml-lg-5 mt-2">
+        <h2>SUMMER SALE!</h2>
+        <h3>UP TO 50% OFF!</h3>
+      </div>
+
+      <div class="col-8 d-flex justify-content-end align-self-center">
+        <button class="btn-shop my-2 my-sm-0 mr-lg-5" type="submit">FIND STORE</button>
+      </div>
+    
+      </div>
+      
+    
+    <div class="row mr-lg-5">
+      <div class="col-lg-7 col-sm-12">
+            <div class="row min-vh-100 justify-content-center">
+                <div class="col-sm-10 mt-3" id="slider">
+                  <nav class="nav mt-5 subNav">
+                    <a class="nav-link active" href="#">Home<i class="fas fa-chevron-right ml-3"></i></a>
+                    <a class="nav-link" href="#">Boots<i class="fas fa-chevron-right ml-3"></i></a>
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Dylan Hiker Boots</a>
+                  </nav>
+                    <div id="myCarousel" class="carousel slide">
+
+                      <!-- Modal to enlarge image -->
+                      <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">              
+                            <div class="modal-body">
+                              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                              <img src="assets/images/Main item Image 01 xl.png" class="imagepreview block__pic" data-large="assets/images/Main item Image 05 xl.png" style="width: 100%;">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="row d-flex justify-content-end mr-4">
+                        <div class="promo-tag mt-3 py-1 px-2 justify-content-end">
+                          <i class="fas fa-tag"></i> - 40% off
+                        </div>
+
+                      <!-- <div class="col clck-large">
+                        <i class="fas fa-search-plus"></i> 
+                      </div> -->
+                      </div>
+                     
+                        
+                      
+                      <!-- main slider carousel items -->
+              
+                        <div class="carousel-inner">
+                            <div class="active carousel-item" data-slide-number="0">
+                              <a href="#" class="pop">
+                                <img src="assets/images/Main item Image 01 xl.png" class="img-fluid">
+                              </a>
+                            </div>
+                            <div class="carousel-item" data-slide-number="1">
+                              <a href="#" class="pop">
+                                <img src="assets/images/Main item Image 05 xl.png" class="img-fluid">
+                              </a>
+                            </div>
+                            <div class="carousel-item" data-slide-number="2">
+                              <a href="#" class="pop">
+                                <img src="assets/images/Main item Image 04 xl.png" class="img-fluid">
+                              </a>
+                            </div>
+                            <div class="carousel-item" data-slide-number="3">
+                              <a href="#" class="pop">
+                                <img src="assets/images/Main item Image 03 xl.png" class="img-fluid">
+                              </a>
+                            </div>
+                            <div class="carousel-item" data-slide-number="4">
+                              <a href="#" class="pop">
+                                <img src="assets/images/Main item Image 02 xl.png" class="img-fluid">
+                              </a>
+                            </div>
+                            
+        
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span aria-hidden="true"><i class="fas fa-chevron-left fa-3x"></i></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span aria-hidden="true"><i class="fas fa-chevron-right fa-3x"></i></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+        
+                        </div>
+                        <!-- main slider carousel nav controls -->
+        
+        
+                        <ul class="carousel-indicators list-inline mx-auto px-2">
+                            <li class="list-inline-item active">
+                                <a id="carousel-selector-0" class="selected" data-slide-to="0" data-target="#myCarousel">
+                                    <img src="assets/images/Main item Image 01.png" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-1" data-slide-to="1" data-target="#myCarousel">
+                                    <img src="assets/images/Main item Image 05.png" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-2" data-slide-to="2" data-target="#myCarousel">
+                                    <img src="assets/images/Main item Image 04.png" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-3" data-slide-to="3" data-target="#myCarousel">
+                                    <img src="assets/images/Main item Image 03.png" class="img-fluid">
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a id="carousel-selector-4" data-slide-to="4" data-target="#myCarousel">
+                                    <img src="assets/images/Main item Image 02.png" class="img-fluid">
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+        
+            </div>
+            <!--/main slider carousel-->
+        
+    </div>
+
+        <!-- START RIGHT ALIGNED CONTENT -->
+
+      <div class="col-lg-5 col-sm-12 mt-lg-5">
+
+        <!-- Start product description -->
+
+        <div class="product-desc mx-4 mt-lg-5">
+          <h1 class="pt-4 px-4 product-head">DYLAN HIKER BOOT</h1>
+          <p><i class="fas fa-store ml-3 px-2"></i> SUPERBALIST</p>
+          <div class="row px-4 desc-list-two">
+            <div class="col4">
+              <ul class="desc-list-r">
+                <li>
+                  Fabrication
+                </li>
+                <li>
+                  Colour
+                </li>
+                <li>
+                  Brand
+                </li>
+              </ul>
+            </div>
+            <div class="col8">
+              <ul class="desc-list-l">
+                <li>
+                  Faux Leather
+                </li>
+                <li>
+                  <span class="dot"></span> Brown
+                </li>
+                <li>
+                  Superbalist
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <hr>
+          
+          <div class="p-details px-4">
+            <div class="py-1 px-4">
+              <p>PRODUCT DETAILS</p>
+            </div>
+              <ul>
+                <li>
+                  Hiking boot
+                </li>
+                <li>
+                  Speed laces
+                </li>
+                <li>
+                  Lace-up design
+                </li>
+                <li>
+                  Rubber sole
+                </li>
+              </ul>
+          </div>
+
+          <div class="row">
+            <div class="col-8 col-sm-7 d-flex justify-content-end align-items-center">
+            <span class="promo-tag mt-2 py-1 px-2 ml-2">
+              <i class="fas fa-tag"></i> - 40% off
+            </span>
+          </div>
+          <div class="col-4">
+            <div class="price-cut ml-2">
+              <span class="strikethrough">R 599</span>
+            </div>
+            <div class="actual-price ml-4 pb-4"> 
+              R 359 </div>
+          </div>
+        </div>
+          
+        </div>
+        <!-- End Product description -->
+
+        <!-- Add to cart -->
+
+        <div class="row mb-5">
+          <div class="col-12 mt-4 d-flex justify-content-center">
+          <div class="add-to-cart">
+          <form class="py-5 px-4 cart-form">
+            <div class="form-group">
+              <label for="size-label pr-5">SIZE</label>
+              <select class="form-control" id="size-form">
+                <option>SELECT SIZE</option>
+                <option>6 UK</option>
+                <option>7 UK</option>
+                <option>8 UK</option>
+                <option>9 UK</option>
+                <option>10 UK</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="qty-label">QUANTITY</label>
+              <select class="form-control" id="qty-form">
+                <option>SELECT QUANTITY</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+            <div class="row d-flex justify-content-center">
+              
+            <button type="submit" class="btn-addcart mt-5"><i class="fas fa-cart-plus"></i>ADD TO CART</button>
+          
+          </div>
+          </form>
+        </div>
+      </div>
+          
+        </div>
+        <!-- End add to cart -->
+      </div>
+
+      
+      <!--END RIGHT ALIGNED CONTENT -->
+
+      <div class="row mx-4 product-list container-fluid mb-5">
+       <h1>MORE FROM <span>BOOTS</span> </h1> <hr>
+      </div>
+      <div class="row mx-4 row-cols-1 row-cols-md-3 mb-5">
+        <!-- card 1 -->
+        <div class="col mb-5">
+          <div class="align-promo">
+            <div class="product-promo-tag py-1 px-2 ml-n3 mt-3">
+              <i class="fas fa-tag"></i> - 40% off
+            </div>
+          </div>
+          <div class="card">
+            
+                      
+            <img src="assets/images/Boots 05.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">HARGRAVE ANKLE BOOT</h5>
+              <p class="card-text"><i class="fa fa-store mr-2"></i>Superbalist</p>
+            </div>
+            <div class="row ml-lg-2">
+              <div class="col-8 card-price">R 500</div>
+              <div class="col-4 card-view"><a href="#">View <i class="fas fa-arrow-right px-2"></i></a> </div>
+            </div>
+          </div>
+        </div> 
+      
+        <!-- end card 1 -->
+        <!-- card 2 -->
+        <div class="col mb-5">
+          <div class="card">
+            <div class="align-lowstock">               
+              <div class="low-stock ml-4 mt-n4"> LOW STOCK</div>  
+            <img src="assets/images/Boots 03.png" class="card-img-top" alt="...">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Cameroon leather</h5>
+              <p class="card-text"><i class="fa fa-store mr-2"></i>Superbalist</p>
+            </div>
+            <div class="row ml-lg-2">
+              <div class="col-8 card-price">R 539</div>
+              <div class="col-4 card-view"><a href="#">View <i class="fas fa-arrow-right px-2"></i></a> </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- end card 2 -->
+        <!-- card 3 -->
+        <div class="col mb-5">
+          <div class="align-promo">
+            <div class="product-promo-tag py-1 px-2 ml-n3 mt-3">
+              <i class="fas fa-tag"></i> - 40% off
+            </div>
+          </div>
+          <div class="card">
+            <div class="align-lowstock">               
+              <div class="low-stock ml-4 mt-n4">
+                 LOW STOCK
+              </div>
+          
+         
+            <img src="assets/images/Boots 01.png" class="card-img-top" alt="...">
+          
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">Greyson brogue</h5>
+              <p class="card-text"><i class="fa fa-store mr-2"></i>Superbalist</p>
+            </div>
+            <div class="row ml-lg-2">
+              <div class="col-8 card-price">R 420</div>
+              <div class="col-4 card-view"><a href="#">View <i class="fas fa-arrow-right px-2"></i></a> </div>
+            </div>
+          
+          </div>
+        </div>
+        <!-- end card 4 -->
+        <!-- card 5 -->
+        <div class="col mb-5">
+          <div class="align-promo">
+            <div class="product-promo-tag py-1 px-2 ml-n3 mt-3">
+              <i class="fas fa-tag"></i> - 40% off
+            </div>
+          </div>
+          <div class="card">
+            <div class="align-lowstock">               
+              <div class="low-stock ml-4 mt-n4">
+                 LOW STOCK
+              </div>
+          
+           
+            <img src="assets/images/Boots 04.png" class="card-img-top" alt="...">
+          </div>
+            <div class="card-body">
+              <h5 class="card-title">orca</h5>
+              <p class="card-text"><i class="fa fa-store mr-2"></i>Superbalist</p>
+            </div>
+            <div class="row ml-lg-2">
+              <div class="col-8 card-price">R 500</div>
+              <div class="col-4 card-view"><a href="#">View <i class="fas fa-arrow-right px-2"></i></a> </div>
+            </div>
+          </div>
+        </div>
+        <!-- end card 5 -->
+        <!-- card 6 -->
+        <div class="col mb-5">
+          <div class="card">
+            <img src="assets/images/Boots 03.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">jean hiker boots</h5>
+              <p class="card-text"><i class="fa fa-store mr-2"></i>Superbalist</p>
+            </div>
+            <div class="row ml-lg-2">
+              <div class="col-8 card-price">R 600</div>
+              <div class="col-4 card-view"><a href="#">View <i class="fas fa-arrow-right px-2"></i></a> </div>
+            
+          </div>
+        </div>
+        <!-- end card 6 -->
+      
+    </div>
+  </div>
+ 
+
+      <!-- Product column -->
+    </div>
+    
+  </div>
+</div>
+<!-- end main content -->
+
+<footer>
+  <div class="row footer pb-5 container-fluid">
+    <div class="col-sm-12 col-md-3 col-lg-2 col-xl-2 offset-lg-2">
+      <ul class="my-5">
+        <li>
+          <a href="#"><h1>Account</h1></a> 
+        </li>
+        <li>
+          <a href="">Account details</a> 
+        </li>
+        <li>
+          <a href="#">Orders</a> 
+        </li>
+        <li>
+         <a href="#">Returns and Exchanges</a> 
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-sm-12 col-md-3 col-lg-3">
+      <ul class="my-5">
+        <li>
+          <a href="#"><h1>The Company</h1></a> 
+        </li>
+        <li>
+          <a href="#">About us</a> 
+        </li>
+        <li>
+          <a href="#">Careers</a> 
+        </li>
+        <li>
+          <a href="#">Contact</a> 
+        </li>
+     
+      </ul>
+    </div>
+
+    <div class="col-4 social offset-md-1 offset-sm-0 pl-5">
+      <h1 class="mt-5">Follow us!</h1>
+      <div class="social-icons mt-4">
+       <a href="#"><i class="fab fa-facebook-square fa-4x mr-4 pt-4"></i></a> <a href="#"><i class="fab fa-instagram fa-4x pt-4"></i></a> 
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- MDB core JavaScript -->
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script> -->
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.js"></script> 
+   
+
+    <!-- Select picker JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Select 2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+    
+  </body>
+</html>
